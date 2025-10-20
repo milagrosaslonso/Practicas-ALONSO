@@ -1,11 +1,13 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
+import DynamicForm from '../components/DynamicForm';
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Pantalla Home</Text>
-      <Text style={styles.subtitle}>Contenido principal de la app</Text>
+      <Text style={styles.subtitle}>Formulario de Home</Text>
+      <DynamicForm />
     </View>
   );
 }
